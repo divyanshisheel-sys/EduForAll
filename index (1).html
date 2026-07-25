@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduForAll - Quality Education</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">📘 EduForAll</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#why" class="nav-link">Why Education</a></li>
+        <li><a href="#resources" class="nav-link">Resources</a></li>
+        <li><a href="#stats" class="nav-link">Stats</a></li>
+        <li><a href="#quiz" class="nav-link">Quiz</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Quality Education For Every Child, Everywhere</h1>
+      <p>Supporting UN Sustainable Development Goal 4 - building a world where
+        learning has no boundaries, and every student gets a fair chance to grow.</p>
+      <button class="btn-primary" id="learnMoreBtn">Learn More</button>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="section about" id="about">
+    <h2 class="section-title">About Quality Education (SDG 4)</h2>
+    <div class="about-content">
+      <p>
+        Goal 4 of the United Nations Sustainable Development Goals asks the world
+        to <strong>"ensure inclusive and equitable quality education and promote
+          lifelong learning opportunities for all."</strong>
+      </p>
+      <p>
+        In simple words, this means every child - no matter where they live, how much
+        money their family has, or what background they come from - deserves the chance
+        to go to school, learn important skills, and build a better future. Quality
+        education is the foundation for reducing poverty, improving health, and
+        creating equal opportunities for everyone.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= WHY EDUCATION MATTERS ================= -->
+  <section class="section why" id="why">
+    <h2 class="section-title">Why Education Matters</h2>
+    <div class="card-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">⚖️</div>
+        <h3>Equal Opportunities</h3>
+        <p>Education gives every student, regardless of background, an equal
+          chance to succeed in life.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💻</div>
+        <h3>Digital Learning</h3>
+        <p>Online tools and e-learning platforms make quality education
+          accessible from anywhere.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🛠️</div>
+        <h3>Skill Development</h3>
+        <p>Practical skills prepare students for real jobs and help them
+          become self-reliant.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🌱</div>
+        <h3>Lifelong Learning</h3>
+        <p>Learning does not stop at school - it continues throughout life,
+          helping people adapt and grow.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= LEARNING RESOURCES ================= -->
+  <section class="section resources" id="resources">
+    <h2 class="section-title">Learning Resources</h2>
+    <div class="card-grid">
+
+      <div class="resource-card">
+        <div class="resource-icon">➗</div>
+        <h3>Mathematics</h3>
+        <p>Build strong problem-solving skills with numbers and logic.</p>
+        <button class="btn-secondary read-more-btn" data-topic="maths">Read More</button>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🔬</div>
+        <h3>Science</h3>
+        <p>Explore the natural world through experiments and discovery.</p>
+        <button class="btn-secondary read-more-btn" data-topic="science">Read More</button>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">💻</div>
+        <h3>Programming</h3>
+        <p>Learn to build websites, apps, and software from scratch.</p>
+        <button class="btn-secondary read-more-btn" data-topic="programming">Read More</button>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-icon">🗣️</div>
+        <h3>Languages</h3>
+        <p>Communicate confidently and connect with people around the world.</p>
+        <button class="btn-secondary read-more-btn" data-topic="languages">Read More</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal for Read More -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <span class="modal-close" id="modalClose">&times;</span>
+      <h3 id="modalTitle">Title</h3>
+      <p id="modalText">Description goes here.</p>
+    </div>
+  </div>
+
+  <!-- ================= STATISTICS SECTION ================= -->
+  <section class="section stats" id="stats">
+    <h2 class="section-title light">Our Impact So Far</h2>
+    <div class="stats-grid">
+
+      <div class="stat-box">
+        <h3 class="counter" data-target="12500">0</h3>
+        <p>Students Helped</p>
+      </div>
+
+      <div class="stat-box">
+        <h3 class="counter" data-target="80">0</h3>
+        <p>Free Courses</p>
+      </div>
+
+      <div class="stat-box">
+        <h3 class="counter" data-target="350">0</h3>
+        <p>Teachers</p>
+      </div>
+
+      <div class="stat-box">
+        <h3 class="counter" data-target="9600">0</h3>
+        <p>Learning Hours</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= QUIZ SECTION ================= -->
+  <section class="section quiz" id="quiz">
+    <h2 class="section-title">Test Your Knowledge</h2>
+
+    <div class="quiz-box" id="quizBox">
+
+      <div class="quiz-question" id="q0" data-answer="b">
+        <p>1. What does SDG stand for?</p>
+        <label><input type="radio" name="q0" value="a"> Social Development Growth</label>
+        <label><input type="radio" name="q0" value="b"> Sustainable Development Goals</label>
+        <label><input type="radio" name="q0" value="c"> Standard Development Group</label>
+      </div>
+
+      <div class="quiz-question" id="q1" data-answer="b">
+        <p>2. Which SDG number focuses on Quality Education?</p>
+        <label><input type="radio" name="q1" value="a"> SDG 2</label>
+        <label><input type="radio" name="q1" value="b"> SDG 4</label>
+        <label><input type="radio" name="q1" value="c"> SDG 7</label>
+      </div>
+
+      <div class="quiz-question" id="q2" data-answer="a">
+        <p>3. Which of these is an example of digital learning?</p>
+        <label><input type="radio" name="q2" value="a"> Online video lectures</label>
+        <label><input type="radio" name="q2" value="b"> Handwritten notes only</label>
+        <label><input type="radio" name="q2" value="c"> Blackboard chalk</label>
+      </div>
+
+      <div class="quiz-question" id="q3" data-answer="c">
+        <p>4. Lifelong learning means:</p>
+        <label><input type="radio" name="q3" value="a"> Learning stops after school</label>
+        <label><input type="radio" name="q3" value="b"> Learning is only for children</label>
+        <label><input type="radio" name="q3" value="c"> Learning continues throughout life</label>
+      </div>
+
+      <div class="quiz-question" id="q4" data-answer="b">
+        <p>5. Quality education helps reduce:</p>
+        <label><input type="radio" name="q4" value="a"> Internet speed</label>
+        <label><input type="radio" name="q4" value="b"> Poverty and inequality</label>
+        <label><input type="radio" name="q4" value="c"> Rainfall</label>
+      </div>
+
+      <button class="btn-primary" id="submitQuizBtn">Submit Quiz</button>
+      <p id="quizResult"></p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="section contact" id="contact">
+    <h2 class="section-title">Contact Information</h2>
+
+    <div class="contact-card">
+      <div class="contact-header">
+        <div class="profile-icon">👨‍🎓</div>
+        <div>
+          <h3>Divyanshi Sheel</h3>
+          <p>Student Developer</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-box">
+          <span>🎓</span>
+          <div>
+            <h4>College</h4>
+            <p>KIET Group of Institutions</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <span>📧</span>
+          <div>
+            <h4>Email</h4>
+            <p>eduforall@email.com</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <span>📱</span>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 XXXXX XXXXX</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <span>📍</span>
+          <div>
+            <h4>Location</h4>
+            <p>Ghaziabad, Uttar Pradesh</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <span>🌐</span>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>linkedin.com/in/eduforall</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <span>💻</span>
+          <div>
+            <h4>GitHub</h4>
+            <p>github.com/eduforall</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>🌍 EduForAll | Supporting SDG 4 - Quality Education for All</p>
+    <p>&copy; 2026 EduForAll. Made with ❤️ for a better tomorrow.</p>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
